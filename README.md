@@ -20,4 +20,5 @@
 | ------------------------------- | ---------------------------------------- |
 | YAHOO_FINANCE_QUOTES_URL        | URL from Yahoo Finance to pull in quotes |
 | YAHOO_FINANCE_QUOTE_SUMMARY_URL | URL from Yahoo Finance to pull in prices |
-| xxx                             | API key for Tiingo                       |
+| TIINGO_SEARCH_URL               | Search symbols with Tiingo               |
+| TIINGO_API_TOKEN                | API token generated from Tiingo          |
