@@ -16,8 +16,8 @@
 
 ## Environment variables
 
-| ENV | DESCRIPTION                              |
-| --- | ---------------------------------------- |
-| xxx | URL from Yahoo Finance to pull in quotes |
-| xxx | URL from Yahoo Finance to pull in prices |
-| xxx | API key for Tiingo                       |
+| ENV                             | DESCRIPTION                              |
+| ------------------------------- | ---------------------------------------- |
+| YAHOO_FINANCE_QUOTES_URL        | URL from Yahoo Finance to pull in quotes |
+| YAHOO_FINANCE_QUOTE_SUMMARY_URL | URL from Yahoo Finance to pull in prices |
+| xxx                             | API key for Tiingo                       |
