@@ -1,24 +1,23 @@
-# README
+## Getting Started
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Install latest version of Ruby
+- Install Rails
+- Install bundler
+- Clone repo and run `bundle install` to install all required gems
 
-Things you may want to cover:
+## Development
 
-* Ruby version
+- Run `rails server` or `rails s` for short
+- To run on a different port, run `rails s -p 5000`
 
-* System dependencies
+## API keys required
 
-* Configuration
+- [TIINGO](https://api.tiingo.com/)
 
-* Database creation
+## Environment variables
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+| ENV | DESCRIPTION                              |
+| --- | ---------------------------------------- |
+| xxx | URL from Yahoo Finance to pull in quotes |
+| xxx | URL from Yahoo Finance to pull in prices |
+| xxx | API key for Tiingo                       |
