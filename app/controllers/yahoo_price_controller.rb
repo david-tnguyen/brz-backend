@@ -2,6 +2,8 @@ require 'faraday'
 require 'json'
 
 class YahooPriceController < ApplicationController
+  before_action :authenticate_user!
+
   def show
     url = "#{ENV["YAHOO_FINANCE_QUOTE_SUMMARY_URL"] }/#{params[:id]}?modules=price"
     res = Faraday.get(url)

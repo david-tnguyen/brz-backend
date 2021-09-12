@@ -21,6 +21,19 @@ Bundler.require(*Rails.groups)
 
 module BrzBackend
   class Application < Rails::Application
+    # CORS
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*'
+        resource(
+          '*',
+          headers: :any,
+          expose: ["Authorization"],
+          methods: [:get, :patch, :put, :delete, :post, :options,               :show]
+        )
+      end
+   end
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 

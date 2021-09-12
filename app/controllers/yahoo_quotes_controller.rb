@@ -2,6 +2,8 @@ require 'faraday'
 require 'json'
 
 class YahooQuotesController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     url = ENV["YAHOO_FINANCE_QUOTES_URL"] + "NYA,DJIA,SPX"
     res = Faraday.get(url)
